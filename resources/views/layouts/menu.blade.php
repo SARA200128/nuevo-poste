@@ -35,11 +35,11 @@
     </a>
     @endcan
 
-    @can('ver-auditoria')
+    <!-- @can('ver-auditoria')
     <a class="nav-link" href="/auditoria">
         <i class=" fa fa-search"></i><span>Auditoria</span>
     </a>
-    @endcan
+    @endcan -->
 
 </li>
 
