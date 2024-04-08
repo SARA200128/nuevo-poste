@@ -46,4 +46,5 @@ Route::group(['middleware' => ['auth']], function() {
     // Nueva ruta de consulta
     // Route::get('/consulta', [ConsultaController::class, 'index'])->name('consulta');
     
+    
 });
