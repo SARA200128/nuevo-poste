@@ -46,5 +46,9 @@ Route::group(['middleware' => ['auth']], function () {
     // Nueva ruta de consulta
     // Route::get('/consulta', [ConsultaController::class, 'index'])->name('consulta');
 
+});
 
+//responderá con una vista predeterminada en casos de fallas en la conexión de red
+Route::get('/offline', function () {
+    return view('vendor.laravelpwa.offline');
 });
