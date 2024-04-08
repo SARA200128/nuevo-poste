@@ -10,6 +10,7 @@ use App\Http\Controllers\PosteController;
 use App\Http\Controllers\ConsultaController;
 use App\Http\Controllers\MapaController;
 use App\Http\Controllers\AuditoriaController; // Agregamos el controlador de consulta
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,4 +45,5 @@ Route::group(['middleware' => ['auth']], function() {
 
     // Nueva ruta de consulta
     // Route::get('/consulta', [ConsultaController::class, 'index'])->name('consulta');
+    
 });
