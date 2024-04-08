@@ -34,7 +34,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Y creamos un grupo de rutas protegidas para los controladores
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
     Route::resource('blogs', BlogController::class);
@@ -45,6 +45,6 @@ Route::group(['middleware' => ['auth']], function() {
 
     // Nueva ruta de consulta
     // Route::get('/consulta', [ConsultaController::class, 'index'])->name('consulta');
-    
-    
+
+
 });
