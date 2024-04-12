@@ -24,7 +24,7 @@
 
     @yield('css')
 
-    {{-- @laravelPWA --}}
+    @laravelPWA
 </head>
 
 <body>
